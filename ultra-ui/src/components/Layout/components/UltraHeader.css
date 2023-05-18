@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap");
+
+.logo-2 {
+  float: left;
+  width: 120px;
+  height: 32px;
+  margin: 16px 24px 16px 0;
+}
+
+.logo-2 h3 {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.logo-2 p {
+  font-size: 15px;
+  padding-left: 0px;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: normal;
+}

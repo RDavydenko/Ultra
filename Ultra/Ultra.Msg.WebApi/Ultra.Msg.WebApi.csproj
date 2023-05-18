@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>2c5cf4d2-d95b-4951-be5e-31e6d10ec69a</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Common" Version="7.0.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ultra.Core.Web\Ultra.Core.Web.csproj" />
+    <ProjectReference Include="..\Ultra.Core\Ultra.Core.csproj" />
+    <ProjectReference Include="..\Ultra.Extensions\Ultra.Extensions.csproj" />
+    <ProjectReference Include="..\Ultra.Infrastructure\Ultra.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

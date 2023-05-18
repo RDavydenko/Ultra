@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "rootDir": "src",
+    "sourceMap": true,
+    "skipDefaultLibCheck": true,
+    "removeComments": true,
+    "baseUrl": ".",
+    "useDefineForClassFields": true,
+    // "paths": {
+    //   "@api": ["./src/api"],
+    //   "@api/*": ["./src/api/*"],
+    //   "@components": ["./src/components"],
+    //   "@components/*": ["./src/components/*"],
+    //   "@consts": ["./src/consts"],
+    //   "@consts/*": ["./src/consts/*"],
+    //   "@models": ["./src/models"],
+    //   "@models/*": ["./src/models/*"],
+    //   "@pages": ["./src/pages"],
+    //   "@pages/*": ["./src/pages/*"],
+    //   "@services": ["./src/services"],
+    //   "@services/*": ["./src/services/*"],
+    //   "@stores": ["./src/stores"],
+    //   "@stores/*": ["./src/stores/*"],
+    //   "@utils": ["./src/utils"],
+    //   "@utils/*": ["./src/utils/*"],
+    // }
+  },
+  "include": [
+    "src"
+  ]
+}

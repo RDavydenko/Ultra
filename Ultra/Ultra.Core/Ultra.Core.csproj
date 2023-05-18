@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\.editorconfig" Link=".editorconfig" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="DelegateDecompiler.EntityFrameworkCore5" Version="0.32.0" />
+		<PackageReference Include="EFCore.NamingConventions" Version="7.0.0" />
+		<PackageReference Include="HotChocolate.AspNetCore" Version="12.15.2" />
+		<PackageReference Include="HotChocolate.Data.EntityFramework" Version="12.15.2" />
+		<PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
+		<PackageReference Include="LinqKit" Version="1.2.3" />
+		<PackageReference Include="Mapster" Version="7.3.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.10" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.3.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Linq.Translations" Version="2.0.0" />
+		<PackageReference Include="NetTopologySuite" Version="2.5.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.4.0" />
+		<PackageReference Include="Z.EntityFramework.Extensions.EFCore" Version="7.17.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Ultra.Extensions\Ultra.Extensions.csproj" />
+	  <ProjectReference Include="..\Ultra.Infrastructure\Ultra.Infrastructure.csproj" />
+	</ItemGroup>
+	
+	
+	<!-- START Генерация моделей для CrudController'а -->	
+	<!--<ItemGroup>
+		<Generated Include="**\*.g.cs" />
+	</ItemGroup>
+	<Target Name="CleanGenerated">
+		<Delete Files="@(Generated)" />
+	</Target>
+	<Target Name="Mapster" AfterTargets="AfterBuild">
+		<Exec WorkingDirectory="$(ProjectDir)" Command="dotnet tool restore" />
+		<Exec WorkingDirectory="$(ProjectDir)" Command="dotnet mapster model -a &quot;$(TargetDir)$(ProjectName).dll&quot;" />
+		<Exec WorkingDirectory="$(ProjectDir)" Command="dotnet mapster extension -a &quot;$(TargetDir)$(ProjectName).dll&quot;" />
+		<Exec WorkingDirectory="$(ProjectDir)" Command="dotnet mapster mapper -a &quot;$(TargetDir)$(ProjectName).dll&quot;" />
+	</Target>-->
+
+	<!-- END Генерация моделей для CrudController'а -->
+
+</Project>

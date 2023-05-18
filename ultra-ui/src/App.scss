@@ -1,0 +1,99 @@
+.pageSpinner {
+  width: 100%;
+  max-height: initial !important;
+  height: 100vh !important;
+  position: fixed !important;
+}
+
+.favorite-star-icon {
+  svg {
+    fill: rgba($color: #000000, $alpha: 0.1);
+  }
+  &.selected,
+  &:hover {
+    svg {
+      fill: #ffd700;
+    }
+  }
+}
+
+.ant-layout-sider-trigger {
+  height: 40px; // На одной высоте с footer'ом
+}
+
+.ant-collapse.ant-collapse-small {
+  .ant-collapse-header {
+    padding: 4px;
+  }
+}
+
+.hue-rotate-0 {
+  filter: hue-rotate(0deg);
+}
+
+.hue-rotate-45 {
+  filter: hue-rotate(45deg);
+}
+
+.hue-rotate-90 {
+  filter: hue-rotate(90deg);
+}
+
+.hue-rotate-135 {
+  filter: hue-rotate(135deg);
+}
+
+.hue-rotate-180 {
+  filter: hue-rotate(180deg);
+}
+
+.hue-rotate-225 {
+  filter: hue-rotate(225deg);
+}
+
+.hue-rotate-225 {
+  filter: hue-rotate(225deg);
+}
+
+.hue-rotate-270 {
+  filter: hue-rotate(270deg);
+}
+
+.hue-rotate-315 {
+  filter: hue-rotate(315deg);
+}
+
+.blink {
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-duration: 1s;
+  -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  -webkit-animation-duration: 1s;
+}
+
+@keyframes blinker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blinker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.ellipsis-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

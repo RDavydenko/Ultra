@@ -1,0 +1,18 @@
+.leaflet-container {
+  margin: 0px auto;
+  height: calc(100vh - 64px - 40px); // header - footer
+  z-index: 0;
+  overflow: hidden;
+}
+
+.leaflet-attribution-flag {
+  display: none !important;
+}
+
+.map {
+  &__marker-preview {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+  }
+}

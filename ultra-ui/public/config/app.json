@@ -1,0 +1,8 @@
+{
+    "apiUrl": "https://localhost:7000",
+    "authApiUrl": "https://localhost:7001",
+    "msgApiUrl": "https://localhost:7002",
+    "msgHubsUrl": "https://localhost:7002/hubs/chat",
+    "graphqlUrl": "https://localhost:7000/graphql",
+    "redirectToAuth": true
+}

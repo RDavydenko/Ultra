@@ -1,0 +1,27 @@
+.notification-count {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  background: #1890ff;
+
+  &.silenced {
+    color: #000;
+    background: rgb(197 197 197);
+  }
+}
+
+.chat-list-item {
+  padding: 10px 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+  background-origin: border-box;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  &.selected {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
